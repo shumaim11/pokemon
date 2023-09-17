@@ -3,10 +3,10 @@ import React, { createContext, useContext, useState } from 'react';
 const PokemonContext = createContext();
 
 export const PokemonProvider = ({ children }) => {
-  const [pokemon, setPokemon] = useState([]);
+  const [pokemons, setPokemons] = useState([]);
 
   return (
-    <PokemonContext.Provider value={{ pokemon, setPokemon }}>
+    <PokemonContext.Provider value={{ pokemons, setPokemons }}>
       {children}
     </PokemonContext.Provider>
   );
