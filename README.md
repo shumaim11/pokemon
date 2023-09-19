@@ -4,6 +4,8 @@ A simple react app using Apollo Client to display the Pokemon data from the foll
 ## Dependencies
 - @apollo/client
 - graphql
+- React-Router-Dom
+- Bootstrap
 
 ## References
 - https://www.apollographql.com/docs/react/get-started
