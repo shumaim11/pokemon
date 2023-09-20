@@ -11,10 +11,10 @@ export const PokemonList = () => {
   const { data, loading, error } = useQuery(GET_ALL_POKEMONS);
   const { setPokemons } = usePokemonContext();
   useEffect(() => {
-      if(!loading && data){
-          setPokemons(data.getAllPokemon);
-          console.clear();
-      }
+    if(!loading && data){
+      setPokemons(data.getAllPokemon);
+      console.clear();
+    }
   }, [data, loading, setPokemons]);
 
   if (loading) return <Loading loadingGif={loading_gif} fullScreen={true}/>;

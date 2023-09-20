@@ -23,7 +23,7 @@ const router = createBrowserRouter(
         <Route path="/pokemon/:id" element={<PokemonDetail />} />
       </Route>
 
-      <Route path="*" element={<Error />} />s
+      <Route path="*" element={<Error />} />
     </Route>
   )
 );
